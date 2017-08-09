@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
-        DisplayPotatoHeatAccumulated(potatoHeatAccumulated);
+        displayPotatoHeatAccumulated(potatoHeatAccumulated);
     }
 
     /*
@@ -59,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
-        DisplayPotatoHeatAccumulated(potatoHeatAccumulated);
+        displayPotatoHeatAccumulated(potatoHeatAccumulated);
     }
 
-    public void DisplayPotatoHeatAccumulated(int seconds){
+    public void displayPotatoHeatAccumulated(int seconds){
         TextView secondsView = (TextView) findViewById(R.id.accumulated_seconds);
         secondsView.setText(String.valueOf(seconds));
     }
